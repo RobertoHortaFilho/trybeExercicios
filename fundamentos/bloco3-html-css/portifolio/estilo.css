@@ -79,6 +79,13 @@ a:hover {
     font-size: 1.3em;
     text-align: center;
     margin: 4px auto;
+    text-align: center;
+}
+
+
+.impar{
+    color:#EBA817;
+    padding: 5px; 
 }
 
 #github{
