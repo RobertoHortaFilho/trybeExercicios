@@ -1,0 +1,75 @@
+header nav {
+    text-align: center;
+    margin-bottom: 50px;
+}
+header nav a {
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+#name{
+    font-size: 2em;
+}
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+article{
+    text-align: center;
+}
+table{
+    border: 1px  solid black;
+    display: inline-block;
+}
+
+.info-card{
+    align-items: center;
+    padding: 8px;
+    margin: 30px auto;
+    border: 2px solid #00000060;
+    width: 60vw;
+}
+
+img{
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px #00000060;
+}
+
+#more-info{
+    margin:auto;
+    width: 80vw;
+    border-radius: 10px;
+    border: 2px solid #00000060
+}
+
+#more-info aside, #more-info section {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+
+#more-info aside{
+    position: relative;
+}
+
+#more-info aside h3{
+    position: relative;
+    top:-30px;
+    left: 20px
+}
+
+
+#more-info section ol{
+    text-align: left;
+}
+
+
+footer{
+    text-align: center;
+}
