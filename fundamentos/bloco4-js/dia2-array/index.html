@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+        let soma = 0
+        for (var num of numbers){
+            //console.log(num)
+            soma += num
+
+            
+        }
+        
+        console.log("soma",soma)
+        console.log("media",(soma/numbers.length))
+        
+        let media = soma/numbers.length
+        if (media > 20){
+            console.log("maior q 20")
+        }else{
+            console.log("maior q 20")
+        }
+
+        let maior = 0
+        let menor = numbers[0]
+        let impares = 0
+        for (var num of numbers){
+            if (num > maior){
+                maior = num
+            }
+            if (num < menor){
+                menor = num
+            }
+            if (num%2 == 1){
+                impares ++
+            }
+        }
+        console.log("maior", maior)
+        console.log("menor", menor)
+        if (impares){
+            console.log("impares", impares)
+        }else{
+            console.log("nenhum impar");
+        }
+        let deUmAVinteCinco =[]
+        for (let i = 0; i < 25; i++){
+            deUmAVinteCinco.push(i)
+        }
+        console.log(deUmAVinteCinco)
+
+        let deUmAVinteCincoPorDois = deUmAVinteCinco.map( (pos) => {
+            return pos/2
+        })
+
+        console.log(deUmAVinteCincoPorDois)
+    </script>
+</body>
+</html>
