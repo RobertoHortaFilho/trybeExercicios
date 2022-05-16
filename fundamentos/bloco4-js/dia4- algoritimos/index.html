@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>algoritimos
+        
+    </title>
+</head>
+<body>
+    
+
+    <script>
+
+        console.log("fatorial");
+        let num = 8
+        let fatorial = 1
+        for (let c = 1; c <= num; c++){
+            fatorial *= c;
+        }
+        console.log(fatorial)
+
+        console.log("inverter palavra")
+        let palavra = "Trybe"
+        let novaPalavra = ""
+        for (let c = palavra.length -1; c >= 0; c--){
+            novaPalavra += palavra[c]
+        }
+        console.log('palavra ',palavra)
+        console.log('nova palavra ',novaPalavra)
+
+        console.log("maior e menor string")
+
+        let array = ['java', 'javascript', 'python', 'html', 'css'];
+        let maior = 0
+        let menor = 0
+
+        for (let index in array){
+            if (array[maior].length < array[index].length){
+                maior = index
+            }
+            if (array[menor].length > array[index].length){
+                menor = index
+            }
+            //console.log(array[index].length)
+        }
+
+        console.log("maior", array[maior])
+        console.log("menor", array[menor])
+
+
+        console.log("maior numero primo ate 50")
+        let primo = true
+        let primosArray = []
+        let limite = 50
+
+        for (let i = 50; i > 1; i--){
+            for (let c = 2; c < i ; c++){
+                if (i%c == 0){
+                    primo = false
+                    break
+                }
+            }
+            if (primo == false){
+                primo = true
+            }else{
+                primosArray.push(i)
+            }
+        }
+
+        primosArray = primosArray.sort( (a,b) => {return a>b})
+
+        console.log("primo",primosArray[0])
+
+
+        console.log("triangulo")
+        let triangulo = 11
+        for(let i = 0; i <= triangulo; i++){
+            let linha = ''
+            for(let j = 0; j< i ; j++){
+                linha += '#'
+            }
+            if (i%2 == 1){
+                while(linha.length < triangulo){
+                    linha = " " + linha + " "
+                }
+                console.log(linha)
+            } 
+        }
+
+    </script>
+</body>
+</html>
