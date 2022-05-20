@@ -1,0 +1,79 @@
+<!-- arquivo index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <main id="paiDoPai">
+        <section id="pai"> 
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+  <script>
+      /*
+      1 Acesse o elemento elementoOndeVoceEsta.
+        2 Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+        3 Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
+        4 Acesse o primeiroFilho a partir de pai.
+        5 Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
+        6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
+        7 Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
+        8 Agora acesse o terceiroFilho a partir de pai.
+    */
+        //1
+      const estou = document.getElementById('elementoOndeVoceEsta')
+      //console.log(estou);
+        //2
+      estou.parentElement.style.color = 'red'
+        //3
+      estou.firstElementChild.innerText = "texto do first filho"
+        //4
+      estou.parentElement.firstElementChild.innerText = "fist filho a partir do pai"
+        //5
+      estou.firstElementChild
+      //6
+      //console.log(estou.nextSibling)
+      //7
+      //console.log("terceiro filho", estou.nextElementSibling)
+      //8
+      //console.log("terceiro filho a partir do pai", estou.parentElement.children[2])
+
+
+      //criando elementos
+      const texto = document.createElement('h2')
+      texto.innerText = 'h2 criado dinamicamente'
+      estou.parentElement.appendChild(texto)
+
+      const filhoDoEstou = document.createElement('h2')
+      filhoDoEstou.innerText = 'filho do estou'
+      estou.appendChild(filhoDoEstou)
+    
+
+      const filhoDoPrimeiroFilho = document.createElement('h2')
+      filhoDoPrimeiroFilho.innerText = 'filhodoFirst'
+      estou.firstElementChild.appendChild(filhoDoPrimeiroFilho)
+
+      //console.log('ultimo',filhoDoPrimeiroFilho.parentElement.parentElement.nextElementSibling)
+
+      //Remova todos os elementos filhos de paiDoPai exceto pai, elementoOndeVoceEsta e primeiroFilhoDoFilho.
+
+    pai.removeChild(document.getElementById('primeiroFilho'))
+    pai.removeChild(document.getElementById('terceiroFilho'))
+    pai.removeChild(document.getElementById('quartoEUltimoFilho'))
+    estou.removeChild(document.getElementById('segundoEUltimoFilhoDoFilho'))
+
+  </script>
+</body>
+</html>
