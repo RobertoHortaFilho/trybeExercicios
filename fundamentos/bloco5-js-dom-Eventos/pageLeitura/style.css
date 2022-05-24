@@ -1,0 +1,11 @@
+* {
+    margin: 20px;
+    text-align: justify;
+}
+form {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    padding:2px;
+    
+}
