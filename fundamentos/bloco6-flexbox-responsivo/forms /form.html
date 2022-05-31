@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viajem</title>
+</head>
+<body>
+
+    <form action="" method="get">
+        <label for="name">Nome: <input name='name' type="text" id="name" minlength="10" maxlength="40" autofocus required></label><br><br>
+        <label for="email">Email: <input name="email" type="email" id="email" minlength="10" maxlength="50" required></label><br><br>
+        <p>Local preferido: </p>
+        <label for="cidade">Cidade <input type="radio" name="local" id="cidade" value="cidade" checked></label>
+        <label for="campo">Campo <input type="radio" name="local" id="campo" value="campo"></label>
+        <label for="praia">Praia <input type="radio" name="local" id="praia" value="praia"></label>
+        <label for="montanha">Montanha <input type="radio" name="local" id="montanha" value="montanha"></label><br><br>
+
+        <label for="porque">porque voce deveria ganhar? <br>
+        <textarea style="resize:none" name="motivo" id="porque" cols="50" rows="12" maxlength="500" required></textarea>
+        <br><br>
+        <label for="data">Data para viajem: <input type="date" name="date" id="data" required></label>
+        <br><br>
+        <label for="notify"> Gostaria de receber outras incriveis noticias? <input type="checkbox" name="notify" id="notify"></label>
+        <br><br>
+        <label for="direitos"> Concordo que minhas imagens possam ser usadas <input type="checkbox" name="direitos" id="direitos" required></label>
+        <br><br>
+        <button type="submit" id="enviar">Enviar</button>
+        <button id="apagar">apagar</button>
+
+    </form>
+
+    <script>
+        const enviar = document.getElementById('enviar')
+        const apagar = document.getElementById('apagar')
+
+        enviar.addEventListener('click', (event) => {
+            
+        })
+
+        apagar.addEventListener('click', (event) => {
+            window.location.reload()
+        })
+    </script>
+    
+</body>
+</html>
